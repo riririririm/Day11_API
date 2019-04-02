@@ -13,11 +13,19 @@ public class Random_ex1 {
 	
 	public void ex2() {
 		int[] lotto = new int[6];
+		Random r = new Random();
 		
-		for (int i = 0; i < 6; i++) {
-			lotto[i] = new Random().nextInt(45)+1;
-			System.out.println(lotto[i]);
+		for(int i=0;i<6;i++) {
+			lotto[i] = r.nextInt(45)+1;
+			for(int j=0;j<i;j++) {
+				if(lotto[i]==lotto[j]) {
+					i--;
+				}
+			}
 		}
+		
+		for(int i=0;i<6;i++)
+			System.out.println(lotto[i]);
 	}
 	
 	
