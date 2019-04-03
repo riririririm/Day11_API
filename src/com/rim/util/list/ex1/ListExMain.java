@@ -11,7 +11,7 @@ public class ListExMain {
 		// 2>>모든정보출력
 
 		Scanner sc = new Scanner(System.in);
-		ArrayList<Member> info = new ArrayList<>();
+		ArrayList info = new ArrayList();
 		ListExInput input = new ListExInput();
 		ListExView view = new ListExView();
 		boolean check = true;
@@ -22,7 +22,6 @@ public class ListExMain {
 
 			switch (select) {
 			case 1:
-				//info = input.setInfo();
 				input.setInfo(info);
 				break;
 			case 2:
