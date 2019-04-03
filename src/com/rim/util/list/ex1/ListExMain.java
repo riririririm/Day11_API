@@ -11,7 +11,7 @@ public class ListExMain {
 		// 2>>모든정보출력
 
 		Scanner sc = new Scanner(System.in);
-		ArrayList info = new ArrayList();
+		ArrayList<Member> info = new ArrayList<>();
 		ListExInput input = new ListExInput();
 		ListExView view = new ListExView();
 		boolean check = true;

@@ -13,11 +13,18 @@ public class ListExInput {
 		info = new ArrayList();
 	}
 
-	public void setInfo(ArrayList info) {
+	public void setInfo(ArrayList<Member> info) {
+		Member m = new Member();
+		
 		System.out.println("이름입력:");
-		info.add(sc.next());
+		String name = sc.next();
+		m.setName(name);
+		
 		System.out.println("나이입력:");
-		info.add(sc.nextInt());
+		int age = sc.nextInt();
+		m.setAge(age);
+		
+		info.add(m);
 		
 		//return info;
 	}
